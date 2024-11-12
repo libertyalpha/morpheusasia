@@ -4,23 +4,98 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title -->
     <title>
       Morpheus | Open-Source AI with Blockchain and Fair-Launch Tokenomics
     </title>
+
+    <!-- Meta Description for SEO -->
+    <meta
+      name="description"
+      content="Morpheus is designed to incentivize the first open-source peer-to-peer network of personal general-purpose AI (smart agents)."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://morpheus.asia/" />
+    <meta
+      property="og:title"
+      content="Morpheus | Open-Source AI with Blockchain and Fair-Launch Tokenomics"
+    />
+    <meta
+      property="og:description"
+      content="Morpheus is designed to incentivize the first open-source peer-to-peer network of personal general-purpose AI (smart agents)."
+    />
+    <meta property="og:image" content="https://morpheus.asia/MOR_EM_512.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://morpheus.asia/" />
+    <meta
+      name="twitter:title"
+      content="Morpheus | Open-Source AI with Blockchain and Fair-Launch Tokenomics"
+    />
+    <meta
+      name="twitter:description"
+      content="Morpheus is designed to incentivize the first open-source peer-to-peer network of personal general-purpose AI (smart agents)."
+    />
+    <meta name="twitter:image" content="https://morpheus.asia/MOR_EM_512.png" />
+
+    <!-- Canonical URL for SEO -->
+    <link rel="canonical" href="https://morpheus.asia/" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Third Party Script -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1EDC8D",
+              neutral: "#4a5061",
+              light: "#03170f",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KJCN2SCGYY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KJCN2SCGYY");
+    </script>
   </head>
   <body>
     <div
-      class="bg-[#03170f] text-white flex justify-center flex-col items-center h-full gap-14 py-5"
+      class="container px-5 md:px-8 mx-auto text-white flex justify-center flex-col items-center h-full gap-14 pb-3 pt-3 md:pt-5"
     >
       <div class="flex flex-col gap-8 text-center pt-3">
         <header class="flex flex-col gap-3">
           <div class="relative">
-            <h1 class="text-5xl font-bold">Morpheus Asia</h1>
             <button
-              class="rounded-full bg-[#4a5061] px-4 h-6 absolute top-[15px] right-[-38px]"
+              class="md:hidden rounded-full bg-neutral px-6 h-7 mb-4 cursor-default"
+            >
+              <p class="text-xs font-bold">Coming soon</p>
+            </button>
+            <h1 class="text-4xl md:text-5xl font-bold">Morpheus Asia</h1>
+            <button
+              class="hidden md:block rounded-full bg-neutral px-4 h-6 absolute top-[15px] right-[-38px] cursor-default"
             >
               <p class="text-xs font-bold">Coming soon</p>
             </button>
@@ -34,26 +109,24 @@
           class="floating-img"
         />
         <div class="mt-8">
-          <button
-            class="bg-[#1EDC8D] px-12 py-3 rounded-sm text-[#03170f] cursor-pointer hover:bg-[#25cb87]"
-          >
-            <a href="https://mor.org/"> Go to MOR.org </a>
-          </button>
+          <a href="https://mor.org/">
+            <button
+              class="bg-primary px-12 py-3 rounded-sm text-light cursor-pointer hover:bg-[#25cb87]"
+            >
+              Go to Main Website
+            </button>
+          </a>
         </div>
       </div>
-      <div class="container grid grid-cols-4 gap-6">
-        <div
-          class="border-2 border-[#1fdb8d] rounded-md p-6 flex flex-col gap-3"
-        >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="border-2 border-primary rounded-md p-6 flex flex-col gap-3">
           <h2 class="text-xl font-bold">About Morpheus</h2>
           <p>
             Morpheus is designed to incentivize the first open-source
             peer-to-peer network of personal general-purpose AI (smart agents).
           </p>
         </div>
-        <div
-          class="border-2 border-[#1fdb8d] rounded-md p-6 flex flex-col gap-3"
-        >
+        <div class="border-2 border-primary rounded-md p-6 flex flex-col gap-3">
           <h2 class="text-xl font-bold">Powered by MOR Token</h2>
           <p>
             The Morpheus network is powered by the MOR token, which rewards
@@ -61,29 +134,43 @@
             open-source decentralized AI infrastructure.
           </p>
         </div>
-        <div
-          class="border-2 border-[#1fdb8d] rounded-md p-6 flex flex-col gap-3"
-        >
-          <h2 class="text-xl font-bold">MORPHEUS.asia Website</h2>
+        <div class="border-2 border-primary rounded-md p-6 flex flex-col gap-3">
+          <h2 class="text-xl font-bold">
+            Uncensored & Private ChatGPT Alternative
+          </h2>
           <p>
-            Morpheus is growing internationally. This Asian community website
-            will cover localized content and country-specific meetup
-            information. Stay tuned.
+            Try out
+            <a
+              href="https://venice.ai"
+              target="_blank"
+              class="text-[#21db8e] cursor-pointer"
+            >
+              Venice.ai </a
+            >, the Morpheus community AI project that offers all their PRO
+            features to MOR token holders for free. Web-enabled, text & picture
+            processing.
           </p>
         </div>
-        <div
-          class="border-2 border-[#1fdb8d] rounded-md p-6 flex flex-col gap-3"
-        >
-          <h2 class="text-xl font-bold">MOR.ORG Main Project Website</h2>
+        <div class="border-2 border-primary rounded-md p-6 flex flex-col gap-3">
+          <h2 class="text-xl font-bold">MOR20 Token Launchpad</h2>
           <p>
-            <a href="https://mor.org" target="_blank">Go to MOR.ORG</a> - Read
-            more here.
+            Create a fair launch for projects, with a fair price discovery
+            mechanism and access the large network effect of the Morpheus
+            community. Read
+            <a
+              href="https://mor.org"
+              target="_blank"
+              class="text-[#21db8e] cursor-pointer"
+            >
+              MOR.org
+            </a>
+            for more info.
           </p>
         </div>
       </div>
-      <div class="flex flex-col container gap-6 pb-6">
-        <h1 class="text-4xl font-bold">24 Hours Price Chart</h1>
-        <div class="w-full">
+      <div class="flex flex-col w-full gap-6 pb-12">
+        <h1 class="text-2xl md:text-4xl font-bold">24 Hours Price Chart</h1>
+        <div>
           <gecko-coin-price-chart-widget
             locale="en"
             dark-mode="true"
@@ -93,10 +180,22 @@
           ></gecko-coin-price-chart-widget>
         </div>
       </div>
-      <div class="container"></div>
     </div>
     <footer>
+      <p>
+        For any cooperation enquires, please contact
+        <span id="email" class="underline underline-offset-3"></span>.
+      </p>
       <p>&copy; 2024 Morpheus. All rights reserved.</p>
     </footer>
+    <script>
+      const user = "rene";
+      const domain = "morpheus";
+      const tld = "asia";
+
+      document.getElementById(
+        "email"
+      ).innerHTML = `<a href="mailto:${user}@${domain}.${tld}">rene@morpheus.asia</a>`;
+    </script>
   </body>
 </html>
