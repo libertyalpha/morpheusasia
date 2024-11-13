@@ -185,7 +185,9 @@
     <footer>
       <p>
         For any cooperation enquires, please contact
-        <span id="email" class="underline underline-offset-3"></span>.
+        <span id="email" class="underline underline-offset-3 cursor-pointer"
+          >[click to reveal]</span
+        >
       </p>
       <p>&copy; 2024 Morpheus. All rights reserved.</p>
     </footer>
@@ -194,9 +196,12 @@
       const domain = "morpheus";
       const tld = "asia";
 
-      document.getElementById(
-        "email"
-      ).innerHTML = `<a href="mailto:${user}@${domain}.${tld}">rene@morpheus.asia</a>`;
+      const emailField = document.getElementById("email");
+      emailField.addEventListener("click", () => {
+        emailField.textContent = `${user}@${domain}.${tld}`;
+        emailField.classList.remove("underline");
+        emailField.classList.remove("cursor-pointer");
+      });
     </script>
   </body>
 </html>
