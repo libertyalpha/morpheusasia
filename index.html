@@ -61,6 +61,7 @@
               primary: "#1EDC8D",
               neutral: "#4a5061",
               light: "#03170f",
+              highlight: "#20dc8e",
             },
           },
         },
@@ -110,11 +111,58 @@
           class="floating-img"
         />
         <div class="mt-8">
-          <a href="https://mor.org/">
+          <a href="https://mor.org/" target="_blank">
             <button
-              class="bg-primary px-12 py-3 rounded-sm text-light cursor-pointer hover:bg-[#25cb87]"
+              class="bg-primary px-12 py-3 rounded-sm text-light font-semibold cursor-pointer hover:bg-[#25cb87]"
             >
               Go to Main Website
+            </button>
+          </a>
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row md:justify-between gap-8 md:gap-14 bg-[#FFFFFF0A] p-6 md:p-10 rounded-[1rem]"
+      >
+        <h1 class="text-2xl md:text-3xl font-bold w-full md:w-7/12">
+          Earn more MOR with <span class="text-highlight">Morpheus.Asia</span>
+        </h1>
+        <div class="flex flex-col gap-6">
+          <p class="text-lg break-word">
+            Increase your staking income by 1% when you stake your stETH using
+            our referral link.
+          </p>
+          <p class="text-lg break-word">
+            Staking with <span class="text-highlight">Morpheus.asia</span> will
+            include you in the group of early contributors to the
+            <span class="text-highlight">Morpheus.asia</span> community.
+            Community token launch with added features coming soon! Stay tuned,
+            only for <span class="text-highlight">Morpheus.asia</span> referred
+            stakers!
+          </p>
+          <p class="text-lg break-word">
+            (Nov/2024 $-equivalent yield &gt; 12.5% p.a., whereas simple ETH
+            staking would yield you &lt; 4% p.a.)
+          </p>
+
+          <p class="text-lg break-word">
+            Make sure to use the offical
+            <span class="text-highlight">Morpheus.asia</span> referral address
+            <span class="text-highlight underline underline-offset-2"
+              >0xf3199e9E17c703fC8f6b226d5a3Ad25c5588a370</span
+            >
+            upon staking. Only stakers using that referral address whitelisted
+            to receive the community token in 2025.
+          </p>
+
+          <a
+            href="https://dashboard.mor.org#/capital?referrer=0xf3199e9E17c703fC8f6b226d5a3Ad25c5588a370&network=mainnet"
+            target="_blank"
+            class="w-fit"
+          >
+            <button
+              class="bg-primary px-12 py-3 rounded-sm text-light font-bold cursor-pointer hover:bg-[#25cb87]"
+            >
+              stETH Staking Dashboard
             </button>
           </a>
         </div>
@@ -170,7 +218,7 @@
         </div>
       </div>
       <div class="flex flex-col w-full gap-6 pb-12">
-        <h1 class="text-2xl md:text-4xl font-bold">24 Hours Price Chart</h1>
+        <h1 class="text-2xl font-bold">24 Hours Price Chart</h1>
         <div>
           <gecko-coin-price-chart-widget
             locale="en"

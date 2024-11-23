@@ -29,3 +29,7 @@ footer {
   animation: floater 6s infinite;
   transition: ease 0.5s;
 }
+
+.break-word {
+  word-break: break-word;
+}
